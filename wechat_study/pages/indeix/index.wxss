@@ -7,4 +7,21 @@
 .avatarUrl{
   height: 200rpx;
   width: 200rpx;
+  border-radius: 50%;
+  margin: 100rpx 0;
+}
+.userName{
+  font-size: 32rpx;
+  margin: 100rpx 0;
+}
+.goStudy{
+  display: flex;
+  flex-direction: column;
+  width: 300rpx;
+  height: 160rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border: 1rpx solid #333;
+  border-radius: 10rpx;
 }

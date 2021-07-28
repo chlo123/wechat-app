@@ -1,7 +1,8 @@
 <view class="indexContainer">
   <image class="avatarUrl" src="../../static/images/nvsheng.jpg"></image>
-  <text class="userName">chlo小翔</text>
-  <view class="goStudy">
-    <text>hello world</text>
+  <text class="userName">{{msg}}</text>
+  <view class="goStudy" bindtap="handleParent">
+    <text bindtap="handleChild">hello world冒泡</text>
+    <text catchtap="handleChild">hello world不冒泡</text>
   </view>
 </view>

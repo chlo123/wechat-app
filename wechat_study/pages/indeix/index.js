@@ -5,14 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    msg: '初始化测试数据'
   },
-
+  handleParent(){
+    console.log('parent')
+  },
+  handleChild(){
+    console.log('child')
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(this.data.msg)
+    this.setData({
+      msg: '修改后的数据'
+    })
+    console.log(this.data.msg)
   },
 
   /**
