@@ -1,0 +1,10 @@
+/* pages/indeix/index.wxss */
+.indexContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avatarUrl{
+  height: 200rpx;
+  width: 200rpx;
+}

@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/indeix/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "hello world"
+  },
+  "sitemapLocation": "sitemap.json"
+}
