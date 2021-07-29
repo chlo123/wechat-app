@@ -5,8 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bannerList:[]
+    bannerList: [],
+    recommendList: [],
   },
+
 
   /**
    * 生命周期函数--监听页面加载
@@ -16,6 +18,11 @@ Page({
     console.log(bannerListData)
     this.setData({
       bannerList: bannerListData.banners
+    })
+    //获取推荐歌单数据
+    let recommendListData = await request('/personalized',{limit: 10})
+    this.setData({
+      recommendList: recommendListData.result
     })
   },
 

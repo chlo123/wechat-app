@@ -1,0 +1,22 @@
+.header{
+  padding-bottom: 20rpx;
+}
+.header .title{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #666;
+}
+.header .headerInfo{
+  display: flex;
+  justify-content: space-between;
+}
+.header .headerInfo .tuijian{
+  line-height: 56rpx;
+  font-size: 32rpx;
+}
+.header .headerInfo .more{
+  border: 2rpx solid #333;
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+  border-radius: 25rpx;
+}

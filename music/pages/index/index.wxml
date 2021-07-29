@@ -1,6 +1,6 @@
 <view>
   <!-- 轮播图区域 -->
-  <swiper class="banners" indicator-dots='true' indicator-color="ivory" indicator-active-color="#d43c33">
+  <swiper class="banners" indicator-dots='true' indicator-color="ivory" indicator-active-color="#d43c33" autoplay interval="2000">
     <swiper-item wx:for="{{bannerList}}" wx:key="bannerId">
       <image src="{{item.pic}}"></image>
     </swiper-item>
@@ -30,39 +30,20 @@
   </view>
   <!-- 推荐歌曲 -->
   <view class="recommendContainer">
-    <view class="header">
-      <text class="title">推荐歌曲</text>
-      <view class="headerInfo">
-        <text class="tuijian">为你精心推荐</text>
-        <text class="more">查看更多</text>
-      </view>
-    </view>
+    <!-- 头部区域 -->
+    <NavHeader title="推荐歌曲" nav="为你精心推荐"></NavHeader>
     <!-- 内容区 -->
     <scroll-view class="recommendScroll" enable-flex scroll-x>
-      <view class="scrollItem">
-        <image src="/static/images/nvsheng.jpg"></image>
-        <text>贾静雯很漂亮,贾静雯很漂亮,贾静雯很漂亮，贾静雯很漂亮</text>
-      </view>
-      <view class="scrollItem">
-        <image src="/static/images/nvsheng.jpg"></image>
-        <text>贾静雯很漂亮</text>
-      </view>
-      <view class="scrollItem">
-        <image src="/static/images/nvsheng.jpg"></image>
-        <text>贾静雯很漂亮</text>
-      </view>
-      <view class="scrollItem">
-        <image src="/static/images/nvsheng.jpg"></image>
-        <text>贾静雯很漂亮</text>
-      </view>
-      <view class="scrollItem">
-        <image src="/static/images/nvsheng.jpg"></image>
-        <text>贾静雯很漂亮</text>
-      </view>
-      <view class="scrollItem">
-        <image src="/static/images/nvsheng.jpg"></image>
-        <text>贾静雯很漂亮</text>
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" wx:for-item="recommendItem">
+        <image src="{{recommendItem.picUrl}}"></image>
+        <text>{{recommendItem.name}}</text>
       </view>
     </scroll-view>
+  </view>
+  <!-- 排行榜 -->
+  <view class="topList">
+    <!-- 头部区域 -->
+    <NavHeader title="排行榜" nav="热歌风向标"></NavHeader>
+    <!-- 内容区域 -->
   </view>
 </view>
