@@ -10,6 +10,25 @@
   border-radius: 50%;
   margin: 100rpx 0;
 }
+.getUserProfile{
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  margin: 100rpx 0;
+  font-size: 24rpx; 
+  line-height: 200rpx;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+.logout{
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  width: 200rpx;
+  border-radius: 10%;
+  font-size: 24rpx;
+}
 .userName{
   font-size: 32rpx;
   margin: 100rpx 0;

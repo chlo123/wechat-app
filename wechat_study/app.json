@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/indeix/index"
+    "pages/indeix/index",
+    "pages/logs/logs"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fff",

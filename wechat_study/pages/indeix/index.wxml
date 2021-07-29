@@ -1,7 +1,21 @@
 <view class="indexContainer">
-  <image class="avatarUrl" src="../../static/images/nvsheng.jpg"></image>
-  <text class="userName">{{msg}}</text>
-  <view class="goStudy" bindtap="handleParent">
+  <block wx:if="{{!userInfo}}">
+    <button class="getUserProfile" bindtap="getUserProfile">获取用户信息</button>
+  </block>
+  <block wx:else>
+    <image class="avatarUrl" src="{{userInfo.avatarUrl}}"></image>
+    <text class="userName">{{userInfo.nickName}}</text>
+  </block>
+  <block wx:if="{{userInfo}}">
+    <button class="logout" bindtap="logout">退出登录</button>
+  </block>
+  <!-- 测试时间绑定 -->.
+  <!-- <view class="goStudy" bindtap="handleParent">
+    <text bindtap="handleChild">hello world冒泡</text>
+    <text catchtap="handleChild">hello world不冒泡</text>
+  </view> -->
+
+  <view class="goStudy" bindtap="toLogs">
     <text bindtap="handleChild">hello world冒泡</text>
     <text catchtap="handleChild">hello world不冒泡</text>
   </view>
