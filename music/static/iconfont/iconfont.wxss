@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2708619 */
-  src: url('//at.alicdn.com/t/font_2708619_qo91c9budk.woff2?t=1627539999829') format('woff2'),
-       url('//at.alicdn.com/t/font_2708619_qo91c9budk.woff?t=1627539999829') format('woff'),
-       url('//at.alicdn.com/t/font_2708619_qo91c9budk.ttf?t=1627539999829') format('truetype');
+  src: url('//at.alicdn.com/t/font_2708619_533k1fi931b.woff2?t=1627629868390') format('woff2'),
+       url('//at.alicdn.com/t/font_2708619_533k1fi931b.woff?t=1627629868390') format('woff'),
+       url('//at.alicdn.com/t/font_2708619_533k1fi931b.ttf?t=1627629868390') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,26 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wodexiaoxi:before {
+  content: "\e684";
+}
+
+.icon-gerenzhuye:before {
+  content: "\e621";
+}
+
+.icon-wodehaoyou:before {
+  content: "\e63c";
+}
+
+.icon-pifugexinghuazhuti-xianxing:before {
+  content: "\e7e8";
+}
+
+.icon-huiyuan:before {
+  content: "\e63e";
 }
 
 .icon-paihangbang:before {

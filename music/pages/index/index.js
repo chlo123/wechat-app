@@ -7,6 +7,7 @@ Page({
   data: {
     bannerList: [],
     recommendList: [],
+    topList: []
   },
 
 
@@ -24,6 +25,18 @@ Page({
     this.setData({
       recommendList: recommendListData.result
     })
+    let index = 4
+    let resultArr = []
+    while(index < 8){
+      let topListData = await request('/top/list',{idx: index++})
+      //splice 会修改原数组
+      let topListItem = {name: topListData.playlist.name, tracks: topListData.playlist.tracks.slice(0,3)}
+      resultArr.push(topListItem)
+      //不需要等待五次请求全部结束才更新，用户体验会好点，但是渲染次数会多点
+      this.setData({
+        topList: resultArr
+      })
+    }
   },
 
   /**
