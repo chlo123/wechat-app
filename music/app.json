@@ -1,17 +1,18 @@
 {
   "pages": [
+    "pages/recommendSong/recommendSong",
     "pages/video/video",
     "pages/personal/personal",
     "pages/login/login",
     "pages/index/index"
+    
   ],
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "window": {
     "navigationBarBackgroundColor": "#d43c33",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "云音乐",
-    "enablePullDownRefresh": true
+    "navigationBarTitleText": "云音乐"
   },
   "tabBar": {
     "color": "#333",
