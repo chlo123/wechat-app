@@ -16,7 +16,7 @@ Page({
    */
   onLoad: async function (options) {
     let bannerListData = await request('/banner', {type: 2})
-    console.log(bannerListData)
+    // console.log(bannerListData)
     this.setData({
       bannerList: bannerListData.banners
     })
